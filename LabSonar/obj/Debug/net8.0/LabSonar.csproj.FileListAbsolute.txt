@@ -12,3 +12,4 @@
 /Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/obj/Debug/net8.0/LabSonar.pdb
 /Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/obj/Debug/net8.0/LabSonar.genruntimeconfig.cache
 /Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/obj/Debug/net8.0/ref/LabSonar.dll
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/obj/Debug/net8.0/LabSonar.sourcelink.json

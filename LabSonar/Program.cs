@@ -39,6 +39,13 @@ namespace NetSdrClient
                 Console.WriteLine("A is mostly normal"); 
             }
         }
+        public static int CalculateScore(int value) 
+        {
+            if (value > 100) return 10;
+            if (value > 50) return 5;
+            if (value < 0) return -1;
+            return 0;
+        }
 
         // FIX 9: Змінив назву методу на PascalCase
         public static void DoSomethingClean()
@@ -57,6 +64,9 @@ namespace NetSdrClient
             {
                 Console.WriteLine("Empty");
             }
+            
+            // Новий метод для демонстрації покриття
+            
 
             // FIX 12: Додав перевірку на null, щоб уникнути Vulnerability
             // До речі, Vulnerability (V-1) у тебе був на ній.
