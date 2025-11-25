@@ -1,27 +1,61 @@
 ﻿using System;
-    class Program
+using System.Collections.Generic;
+
+namespace NetSdrClient
+{
+    // SMELL 1: Static class should be used if only static methods, or correct class structure
+    public class Program
     {
+        // SMELL 2: Public field instead of property (Bad encapsulation)
+        // SMELL 3: Naming convention violation (Should be PascalCase: PublicField)
+        public int publicField = 10;
+
         static void Main(string[] args)
         {
-            Console.WriteLine("Starting NetSdrClient...");
+            Console.WriteLine("Hello World!");
 
-            int a = 5;
-            int b = 10;
-            int result = CalculateSum(a, b);
+            // SMELL 4: Unused variable
+            int unusedVar = 123;
 
-            Console.WriteLine($"Result is: {result}");
+            // SMELL 5: Commented out code (Sonar hates this)
+            // int y = 20;
+            // Console.WriteLine(y);
 
-            // --- СПЕЦІАЛЬНИЙ CODE SMELL ДЛЯ SONARCLOUD ---
-            // SonarCloud підсвітить цю змінну як "Unused variable" (невикористана змінна).
-            // Це нормально! Ми хочемо побачити, як працює аналізатор.
-            int unusedVariable = 100; 
+            try
+            {
+                DoSomething();
+            }
+            catch (Exception ex)
+            {
+                // SMELL 6: Empty catch block (Critical smell!)
+            }
             
-            // Ще один приклад: закоментований код, який Sonar теж не любить
-            // Console.WriteLine("This is commented out code");
+            // SMELL 7: Cognitive Complexity & Magic Numbers
+            // SMELL 8: Nested IFs
+            int a = 5;
+            if (a > 0)
+            {
+                if (a < 100) // 100 is a "Magic Number"
+                {
+                    Console.WriteLine("A is mostly normal"); 
+                }
+            }
         }
 
-        static int CalculateSum(int x, int y)
+        // SMELL 9: Method name not PascalCase (should be DoSomething)
+        public static void DoSomething()
         {
-            return x + y;
+            // SMELL 10: Loop with empty body
+            for (int i = 0; i < 5; i++)
+            {
+            }
+            
+            List<string> list = new List<string>();
+            // SMELL 11: Use of .Count() instead of .Count property on List (Performance)
+            if (list.Count == 0) 
+            {
+                Console.WriteLine("Empty");
+            }
         }
     }
+}
