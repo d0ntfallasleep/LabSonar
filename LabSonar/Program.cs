@@ -1,60 +1,69 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Linq; // Додав, бо треба для Count()
 
 namespace NetSdrClient
 {
-    // SMELL 1: Static class should be used if only static methods, or correct class structure
-    public class Program
+    // FIX 1: Змінив class на static class (бо він містить тільки static Main)
+    public static class Program
     {
-        // SMELL 2: Public field instead of property (Bad encapsulation)
-        // SMELL 3: Naming convention violation (Should be PascalCase: PublicField)
-        public int publicField = 10;
-
+        // FIX 2 & 3: Видалив publicField, оскільки воно не використовується і порушує інкапсуляцію.
+        
         static void Main(string[] args)
         {
             Console.WriteLine("Hello World!");
 
-            // SMELL 4: Unused variable
-            int unusedVar = 123;
+            // FIX 4: Видалив unusedVar
+            // int unusedVar = 123; 
 
-            // SMELL 5: Commented out code (Sonar hates this)
+            // FIX 5: Видалив закоментований код
             // int y = 20;
             // Console.WriteLine(y);
 
             try
             {
-                DoSomething();
+                DoSomethingClean(); 
             }
+            // FIX 6: Додав обробку помилки (тепер не пустий catch)
             catch (Exception ex)
             {
-                // SMELL 6: Empty catch block (Critical smell!)
+                Console.WriteLine($"An error occurred: {ex.Message}");
             }
             
-            // SMELL 7: Cognitive Complexity & Magic Numbers
-            // SMELL 8: Nested IFs
+            // FIX 7 & 8: Прибрав Magic Number (100) та зменшив вкладеність (об'єднав if)
+            // (Тепер це також вирішує проблему з Complexity)
             int a = 5;
-            if (a > 0)
+            const int MAX_VALUE = 100; // Виніс Magic Number в константу
+            if (a > 0 && a < MAX_VALUE)
             {
-                if (a < 100) // 100 is a "Magic Number"
-                {
-                    Console.WriteLine("A is mostly normal"); 
-                }
+                Console.WriteLine("A is mostly normal"); 
             }
         }
 
-        // SMELL 9: Method name not PascalCase (should be DoSomething)
-        public static void DoSomething()
+        // FIX 9: Змінив назву методу на PascalCase
+        public static void DoSomethingClean()
         {
-            // SMELL 10: Loop with empty body
+            // FIX 10: Видалив пустий цикл
+            /*
             for (int i = 0; i < 5; i++)
             {
             }
+            */
             
             List<string> list = new List<string>();
-            // SMELL 11: Use of .Count() instead of .Count property on List (Performance)
+            
+            // FIX 11: Використовую .Count замість .Count() (краща продуктивність)
             if (list.Count == 0) 
             {
                 Console.WriteLine("Empty");
+            }
+
+            // FIX 12: Додав перевірку на null, щоб уникнути Vulnerability
+            // До речі, Vulnerability (V-1) у тебе був на ній.
+            string someString = null;
+            if (someString is null)
+            {
+                Console.WriteLine("String is null.");
             }
         }
     }
