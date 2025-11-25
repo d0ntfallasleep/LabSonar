@@ -44,6 +44,16 @@ jobs:
       - name: Build
         run: dotnet build LabSonar.sln -c Release --no-restore
 
+      # НОВИЙ БЛОК: Запуск тестів та генерація звіту про покриття
+      - name: Tests with coverage (OpenCover)
+        run: |
+          # Вказуємо шлях до тестового проекту для запуску
+          dotnet test NetSdrClientAppTests/NetSdrClientAppTests.csproj -c Release --no-build `
+            /p:CollectCoverage=true `
+            /p:CoverletOutput=TestResults/coverage.xml `
+            /p:CoverletOutputFormat=opencover
+        shell: pwsh
+
       - name: SonarScanner End
         run: dotnet sonarscanner end /d:sonar.token="${{ secrets.SONAR_TOKEN }}"
         shell: pwsh
