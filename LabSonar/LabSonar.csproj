@@ -8,7 +8,15 @@
     </PropertyGroup>
 
     <ItemGroup>
-      <Content Include=".github\workflows\sonarcloud.yml" />
+      <Compile Remove=".github\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <EmbeddedResource Remove=".github\**" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <None Remove=".github\**" />
     </ItemGroup>
 
 </Project>
