@@ -2,19 +2,6 @@
   "version": 3,
   "targets": {
     "net8.0": {
-      "LabSonar.Application/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v8.0",
-        "dependencies": {
-          "LabSonar.Infrastructure": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/LabSonar.Application.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/LabSonar.Application.dll": {}
-        }
-      },
       "LabSonar.Infrastructure/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v8.0",
@@ -28,11 +15,6 @@
     }
   },
   "libraries": {
-    "LabSonar.Application/1.0.0": {
-      "type": "project",
-      "path": "../LabSonar.Application/LabSonar.Application.csproj",
-      "msbuildProject": "../LabSonar.Application/LabSonar.Application.csproj"
-    },
     "LabSonar.Infrastructure/1.0.0": {
       "type": "project",
       "path": "../LabSonar.Infrastructure/LabSonar.Infrastructure.csproj",
@@ -41,7 +23,6 @@
   },
   "projectFileDependencyGroups": {
     "net8.0": [
-      "LabSonar.Application >= 1.0.0",
       "LabSonar.Infrastructure >= 1.0.0"
     ]
   },
@@ -51,11 +32,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/LabSonar.csproj",
-      "projectName": "LabSonar",
-      "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/LabSonar.csproj",
+      "projectUniqueName": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj",
+      "projectName": "LabSonar.Application",
+      "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj",
       "packagesPath": "/Users/mikolaplahotnij/.nuget/packages/",
-      "outputPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar/obj/",
+      "outputPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/mikolaplahotnij/.nuget/NuGet/NuGet.Config"
@@ -70,9 +51,6 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj": {
-              "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj"
-            },
             "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj": {
               "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj"
             }

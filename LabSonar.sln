@@ -5,6 +5,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabSonar", "LabSonar\LabSon
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NetSdrClientAppTests", "NetSdrClientAppTests\NetSdrClientAppTests.csproj", "{95283FC3-52AA-4026-B59A-A06310A05B75}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabSonar.Application", "LabSonar.Application\LabSonar.Application.csproj", "{8C31AB33-2C70-47B1-8909-E4E7E328E46B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LabSonar.Infrastructure", "LabSonar.Infrastructure\LabSonar.Infrastructure.csproj", "{C5B8B02B-CEAF-4982-8CD3-4D58EE48B2E5}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -19,5 +23,13 @@ Global
 		{95283FC3-52AA-4026-B59A-A06310A05B75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{95283FC3-52AA-4026-B59A-A06310A05B75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{95283FC3-52AA-4026-B59A-A06310A05B75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8C31AB33-2C70-47B1-8909-E4E7E328E46B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C31AB33-2C70-47B1-8909-E4E7E328E46B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C31AB33-2C70-47B1-8909-E4E7E328E46B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C31AB33-2C70-47B1-8909-E4E7E328E46B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C5B8B02B-CEAF-4982-8CD3-4D58EE48B2E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C5B8B02B-CEAF-4982-8CD3-4D58EE48B2E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C5B8B02B-CEAF-4982-8CD3-4D58EE48B2E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C5B8B02B-CEAF-4982-8CD3-4D58EE48B2E5}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal
