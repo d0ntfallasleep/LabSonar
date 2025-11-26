@@ -19,6 +19,12 @@ namespace NetSdrClient
             // FIX 5: Видалив закоментований код
             // int y = 20;
             // Console.WriteLine(y);
+            
+            
+            
+            
+            
+            
 
             try
             {
