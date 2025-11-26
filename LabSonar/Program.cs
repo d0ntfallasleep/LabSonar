@@ -78,4 +78,4 @@ namespace NetSdrClient
         }
     }
 }
-// Final run trigger
+// Final run triggerівфвіф
