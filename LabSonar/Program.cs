@@ -39,54 +39,79 @@ namespace NetSdrClient
                 Console.WriteLine("A is mostly normal"); 
             }
         }
-        public static string AnalyzeSpeed(int speed)
+        // МЕТОД З ДУБЛІКАТАМИ 1: Аналіз швидкості (РОЗШИРЕНИЙ)
+    public static string AnalyzeSpeed(int speed)
+    {
+        // 1. Початкова перевірка
+        if (speed < 0)
         {
-            if (speed < 0)
-            {
-                return "Invalid value";
-            }
-            if (speed == 0)
-            {
-                return "Stopped";
-            }
-            if (speed <= 50)
-            {
-                return "Low speed";
-            }
-            else if (speed <= 100)
-            {
-                return "Normal speed";
-            }
-            else // speed > 100
-            {
-                return "High speed";
-            }
+            return "Invalid value: Speed cannot be negative. Check sensor input.";
         }
+        
+        // 2. Перевірка граничних значень
+        if (speed == 0)
+        {
+            // Додатковий коментар для збільшення довжини
+            return "Stopped: Vehicle is completely stationary.";
+        }
+        
+        // 3. Низький діапазон
+        if (speed <= 50)
+        {
+            Console.WriteLine("Speed is in the low range (0-50).");
+            return "Low speed";
+        }
+        // 4. Середній діапазон
+        else if (speed <= 100)
+        {
+            // Додатковий рядок логування
+            Console.WriteLine("Speed is in the normal range (51-100).");
+            return "Normal speed";
+        }
+        // 5. Високий діапазон
+        else // speed > 100
+        {
+            Console.WriteLine("WARNING: Speed exceeds 100.");
+            return "High speed";
+        }
+    }
 
-        // МЕТОД З ДУБЛІКАТАМИ 2: Аналіз висоти
-        public static string AnalyzeHeight(int height)
+    // МЕТОД З ДУБЛІКАТАМИ 2: Аналіз висоти (РОЗШИРЕНИЙ)
+    public static string AnalyzeHeight(int height)
+    {
+        // 1. Початкова перевірка
+        if (height < 0)
         {
-            if (height < 0)
-            {
-                return "Invalid value";
-            }
-            if (height == 0)
-            {
-                return "Ground level"; // Змінений тільки цей рядок
-            }
-            if (height <= 50)
-            {
-                return "Low height"; // Змінений тільки цей рядок
-            }
-            else if (height <= 100)
-            {
-                return "Normal height"; // Змінений тільки цей рядок
-            }
-            else // height > 100
-            {
-                return "Great height"; // Змінений тільки цей рядок
-            }
+            return "Invalid value: Height cannot be negative. Check sensor input.";
         }
+        
+        // 2. Перевірка граничних значень
+        if (height == 0)
+        {
+            // Додатковий коментар для збільшення довжини
+            return "Ground level: Altitude is zero."; // Різниця
+        }
+        
+        // 3. Низький діапазон
+        if (height <= 50)
+        {
+            Console.WriteLine("Height is in the low range (0-50).");
+            return "Low height"; // Різниця
+        }
+        // 4. Середній діапазон
+        else if (height <= 100)
+        {
+            // Додатковий рядок логування
+            Console.WriteLine("Height is in the normal range (51-100).");
+            return "Normal height"; // Різниця
+        }
+        // 5. Високий діапазон
+        else // height > 100
+        {
+            Console.WriteLine("WARNING: Height exceeds 100.");
+            return "Great height"; // Різниця
+        }
+    }
 
 // ... існуючий код ...
         public static int CalculateScore(int value) 
