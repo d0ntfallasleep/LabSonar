@@ -78,9 +78,9 @@ namespace NetSdrClient
             };
         }
         // ... і так само для AnalyzeHeight
-        public static string AnalyzeHeight(int speed)
+        public static string AnalyzeHeight(int height)
         {
-            string level = GetLevelDescription(speed); // ВИКОРИСТАННЯ ПОМІЧНИКА
+            string level = GetLevelDescription(height);
 
             return level switch
             {
