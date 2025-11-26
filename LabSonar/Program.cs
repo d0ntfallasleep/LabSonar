@@ -39,6 +39,56 @@ namespace NetSdrClient
                 Console.WriteLine("A is mostly normal"); 
             }
         }
+        public static string AnalyzeSpeed(int speed)
+        {
+            if (speed < 0)
+            {
+                return "Invalid value";
+            }
+            if (speed == 0)
+            {
+                return "Stopped";
+            }
+            if (speed <= 50)
+            {
+                return "Low speed";
+            }
+            else if (speed <= 100)
+            {
+                return "Normal speed";
+            }
+            else // speed > 100
+            {
+                return "High speed";
+            }
+        }
+
+        // МЕТОД З ДУБЛІКАТАМИ 2: Аналіз висоти
+        public static string AnalyzeHeight(int height)
+        {
+            if (height < 0)
+            {
+                return "Invalid value";
+            }
+            if (height == 0)
+            {
+                return "Ground level"; // Змінений тільки цей рядок
+            }
+            if (height <= 50)
+            {
+                return "Low height"; // Змінений тільки цей рядок
+            }
+            else if (height <= 100)
+            {
+                return "Normal height"; // Змінений тільки цей рядок
+            }
+            else // height > 100
+            {
+                return "Great height"; // Змінений тільки цей рядок
+            }
+        }
+
+// ... існуючий код ...
         public static int CalculateScore(int value) 
         {
             if (value > 100) return 10;
