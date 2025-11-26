@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("LabSonar.Application")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d6b10e1c02003bd63ad3aa4396f953806c3eb12")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+84c0395b367fdc27994c19b49602457750311d57")]
 [assembly: System.Reflection.AssemblyProductAttribute("LabSonar.Application")]
 [assembly: System.Reflection.AssemblyTitleAttribute("LabSonar.Application")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -25,11 +25,7 @@
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
-            "projectReferences": {
-              "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj": {
-                "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj"
-              }
-            }
+            "projectReferences": {}
           }
         },
         "warningProperties": {
