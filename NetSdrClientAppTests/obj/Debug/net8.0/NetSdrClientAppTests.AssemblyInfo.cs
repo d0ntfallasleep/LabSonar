@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("NetSdrClientAppTests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+64e241c8e157be80e0271bf2c53a91e3d0f8ed89")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+d2d9d2c18d4990b7eb181fe59503fe4984b62473")]
 [assembly: System.Reflection.AssemblyProductAttribute("NetSdrClientAppTests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("NetSdrClientAppTests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

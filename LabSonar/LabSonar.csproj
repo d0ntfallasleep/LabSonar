@@ -19,4 +19,9 @@
       <None Remove=".github\**" />
     </ItemGroup>
 
+    <ItemGroup>
+      <ProjectReference Include="..\LabSonar.Application\LabSonar.Application.csproj" />
+      <ProjectReference Include="..\LabSonar.Infrastructure\LabSonar.Infrastructure.csproj" />
+    </ItemGroup>
+
 </Project>

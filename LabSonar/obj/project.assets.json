@@ -1,11 +1,46 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "LabSonar.Application/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LabSonar.Application.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LabSonar.Application.dll": {}
+        }
+      },
+      "LabSonar.Infrastructure/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/LabSonar.Infrastructure.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/LabSonar.Infrastructure.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "LabSonar.Application/1.0.0": {
+      "type": "project",
+      "path": "../LabSonar.Application/LabSonar.Application.csproj",
+      "msbuildProject": "../LabSonar.Application/LabSonar.Application.csproj"
+    },
+    "LabSonar.Infrastructure/1.0.0": {
+      "type": "project",
+      "path": "../LabSonar.Infrastructure/LabSonar.Infrastructure.csproj",
+      "msbuildProject": "../LabSonar.Infrastructure/LabSonar.Infrastructure.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "LabSonar.Application >= 1.0.0",
+      "LabSonar.Infrastructure >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "/Users/mikolaplahotnij/.nuget/packages/": {}
@@ -31,7 +66,14 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj": {
+              "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/LabSonar.Application.csproj"
+            },
+            "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj": {
+              "projectPath": "/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Infrastructure/LabSonar.Infrastructure.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
