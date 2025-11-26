@@ -1,0 +1,7 @@
+version: 2
+updates:
+  - package-ecosystem: "nuget"
+    directory: "/" # Шукати пакети в корені
+    schedule:
+      interval: "weekly" # Перевіряти раз на тиждень
+    open-pull-requests-limit: 10
