@@ -39,79 +39,63 @@ namespace NetSdrClient
                 Console.WriteLine("A is mostly normal"); 
             }
         }
-        // МЕТОД З ДУБЛІКАТАМИ 1: Аналіз швидкості (РОЗШИРЕНИЙ)
-    public static string AnalyzeSpeed(int speed)
-    {
-        // 1. Початкова перевірка
-        if (speed < 0)
+        // ПРИВАТНИЙ МЕТОД: Винесена спільна логіка
+        private static string GetLevelDescription(int value)
         {
-            return "Invalid value: Speed cannot be negative. Check sensor input.";
+            if (value < 0)
+            {
+                return "Invalid value";
+            }
+            if (value == 0)
+            {
+                return "Zero";
+            }
+            if (value <= 50)
+            {
+                return "Low";
+            }
+            else if (value <= 100)
+            {
+                return "Normal";
+            }
+            else
+            {
+                return "High";
+            }
         }
-        
-        // 2. Перевірка граничних значень
-        if (speed == 0)
+        public static string AnalyzeSpeed(int speed)
         {
-            // Додатковий коментар для збільшення довжини
-            return "Stopped: Vehicle is completely stationary.";
-        }
-        
-        // 3. Низький діапазон
-        if (speed <= 50)
-        {
-            Console.WriteLine("Speed is in the low range (0-50).");
-            return "Low speed";
-        }
-        // 4. Середній діапазон
-        else if (speed <= 100)
-        {
-            // Додатковий рядок логування
-            Console.WriteLine("Speed is in the normal range (51-100).");
-            return "Normal speed";
-        }
-        // 5. Високий діапазон
-        else // speed > 100
-        {
-            Console.WriteLine("WARNING: Speed exceeds 100.");
-            return "High speed";
-        }
-    }
+            string level = GetLevelDescription(speed); // ВИКОРИСТАННЯ ПОМІЧНИКА
 
-    // МЕТОД З ДУБЛІКАТАМИ 2: Аналіз висоти (РОЗШИРЕНИЙ)
-    public static string AnalyzeHeight(int height)
-    {
-        // 1. Початкова перевірка
-        if (height < 0)
-        {
-            return "Invalid value: Height cannot be negative. Check sensor input.";
+            return level switch
+            {
+                "Invalid value" => "Invalid value: Speed cannot be negative. Check sensor input.",
+                "Zero" => "Stopped: Vehicle is completely stationary.",
+                "Low" => "Low speed",
+                "Normal" => "Normal speed",
+                "High" => "High speed",
+                _ => "Unknown speed state"
+            };
         }
-        
-        // 2. Перевірка граничних значень
-        if (height == 0)
+        // ... і так само для AnalyzeHeight
+        public static string AnalyzeHeight(int speed)
         {
-            // Додатковий коментар для збільшення довжини
-            return "Ground level: Altitude is zero."; // Різниця
+            string level = GetLevelDescription(speed); // ВИКОРИСТАННЯ ПОМІЧНИКА
+
+            return level switch
+            {
+                "Invalid value" => "Invalid value: Speed cannot be negative. Check sensor input.",
+                "Zero" => "Stopped: Vehicle is completely stationary.",
+                "Low" => "Low speed",
+                "Normal" => "Normal speed",
+                "High" => "High speed",
+                _ => "Unknown speed state"
+            };
         }
-        
-        // 3. Низький діапазон
-        if (height <= 50)
-        {
-            Console.WriteLine("Height is in the low range (0-50).");
-            return "Low height"; // Різниця
-        }
-        // 4. Середній діапазон
-        else if (height <= 100)
-        {
-            // Додатковий рядок логування
-            Console.WriteLine("Height is in the normal range (51-100).");
-            return "Normal height"; // Різниця
-        }
-        // 5. Високий діапазон
-        else // height > 100
-        {
-            Console.WriteLine("WARNING: Height exceeds 100.");
-            return "Great height"; // Різниця
-        }
-    }
+        // ... і так само для AnalyzeHeight
+    
+
+    
 
 // ... існуючий код ...
         public static int CalculateScore(int value) 
