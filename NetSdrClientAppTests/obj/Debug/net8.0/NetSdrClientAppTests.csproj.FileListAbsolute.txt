@@ -1,0 +1,8 @@
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/bin/Debug/net8.0/.msCoverageSourceRootsMapping_NetSdrClientAppTests
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/bin/Debug/net8.0/CoverletSourceRootsMapping
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.csproj.AssemblyReference.cache
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.AssemblyInfoInputs.cache
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.AssemblyInfo.cs
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.csproj.CoreCompileInputs.cache
+/Users/mikolaplahotnij/RiderProjects/LabSonar/NetSdrClientAppTests/obj/Debug/net8.0/NetSdrClientAppTests.sourcelink.json

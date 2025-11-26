@@ -1,0 +1,12 @@
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/bin/Debug/net8.0/LabSonar.Application.deps.json
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/bin/Debug/net8.0/LabSonar.Application.dll
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/bin/Debug/net8.0/LabSonar.Application.pdb
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.GeneratedMSBuildEditorConfig.editorconfig
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.AssemblyInfoInputs.cache
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.AssemblyInfo.cs
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.csproj.CoreCompileInputs.cache
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.sourcelink.json
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.dll
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/refint/LabSonar.Application.dll
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/LabSonar.Application.pdb
+/Users/mikolaplahotnij/RiderProjects/LabSonar/LabSonar.Application/obj/Debug/net8.0/ref/LabSonar.Application.dll
