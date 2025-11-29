@@ -83,12 +83,13 @@ namespace NetSdrClient
 
             return level switch
             {
-                "Invalid value" => "Invalid value: Speed cannot be negative. Check sensor input.",
-                "Zero" => "Stopped: Vehicle is completely stationary.",
-                "Low" => "Low speed",
-                "Normal" => "Normal speed",
-                "High" => "High speed",
-                _ => "Unknown speed state"
+                "Invalid value" => "Invalid value: Height cannot be negative. Check sensor input.",
+                "Zero" => "Ground level: Altitude is zero.",
+                // ПОМИЛКА БУЛА ТУТ: Виправте "Low speed" на "Low height"
+                "Low" => "Low height",     
+                "Normal" => "Normal height",
+                "High" => "Great height",
+                _ => "Unknown height state"
             };
         }
         
