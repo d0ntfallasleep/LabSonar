@@ -64,7 +64,7 @@ namespace NetSdrClient
         }
         public static string AnalyzeSpeed(int speed)
         {
-            string level = GetLevelDescription(speed); // ВИКОРИСТАННЯ ПОМІЧНИКА
+            string level = GetLevelDescription(speed); 
 
             return level switch
             {
@@ -76,7 +76,7 @@ namespace NetSdrClient
                 _ => "Unknown speed state"
             };
         }
-        // ... і так само для AnalyzeHeight
+        
         public static string AnalyzeHeight(int height)
         {
             string level = GetLevelDescription(height);
@@ -91,12 +91,11 @@ namespace NetSdrClient
                 _ => "Unknown speed state"
             };
         }
-        // ... і так само для AnalyzeHeight
+        
     
 
-    
+        
 
-// ... існуючий код ...
         public static int CalculateScore(int value) 
         {
             if (value > 100) return 10;
@@ -123,11 +122,9 @@ namespace NetSdrClient
                 Console.WriteLine("Empty");
             }
             
-            // Новий метод для демонстрації покриття
             
 
             // FIX 12: Додав перевірку на null, щоб уникнути Vulnerability
-            // До речі, Vulnerability (V-1) у тебе був на ній.
             string someString = null;
             if (someString is null)
             {
@@ -136,4 +133,3 @@ namespace NetSdrClient
         }
     }
 }
-// Final run triggerівфвіф
